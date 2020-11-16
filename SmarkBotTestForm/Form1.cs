@@ -38,7 +38,7 @@ namespace SmarkBotTestForm
                 MailMessage mail = new MailMessage();
                 mail.To.Add("smarkbot@outlook.com");
                 mail.From = new MailAddress("danny_carr@hotmail.co.uk");
-                mail.Subject = "Error";
+                mail.Subject = "Error Manual Send";
                 string Body = "Error";
                 mail.Body = Body;
                 mail.IsBodyHtml = true;
@@ -51,7 +51,7 @@ namespace SmarkBotTestForm
                 //Or your Smtp Email ID and Password
                 //smtp.Send(mail);
 
-                //ex.LogToElmah();
+                ex.LogToElmah();
             }
 
             var sessionsApi = new SessionsApi();
