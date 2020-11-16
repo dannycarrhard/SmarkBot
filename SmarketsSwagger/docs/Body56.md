@@ -1,0 +1,11 @@
+# IO.Swagger.Model.Body56
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Amount** | **string** |  | 
+**FailUrl** | **string** |  | [optional] 
+**SuccessUrl** | **string** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
