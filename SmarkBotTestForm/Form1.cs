@@ -70,8 +70,8 @@ namespace SmarkBotTestForm
 
                 var eventsApi= new EventsApi(configuration);
 
-                var minDateTime = new DateTime(2020, 11, 11, 12, 0, 0);
-                var maxDateTime = new DateTime(2020, 11, 11, 21, 0, 0);
+                var minDateTime = new DateTime(2020, 11, 17, 12, 0, 0);
+                var maxDateTime = new DateTime(2020, 11, 18, 21, 0, 0);
 
                 var eventTypes = new List<string>();
                 eventTypes.Add("horse_racing_race");
@@ -167,12 +167,20 @@ namespace SmarkBotTestForm
                     var markets = marketList.Where(c => c.EventId == itemEvent.Id).ToList();
                     itemEvent.Markets = markets;
                 }
+
+                var contractSelections = contractList.Where(c => c.Quote.Offers[0].Price > 2);
+
             }
             catch (Exception ex)
             {
 
                 ex.LogToElmah();
             }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
 
         }
     }
